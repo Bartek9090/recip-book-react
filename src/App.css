@@ -1,0 +1,46 @@
+body {
+  font-family: "Courgette", cursive;
+  font-family: "Roboto", sans-serif;
+  background-color: antiquewhite;
+}
+.mainContainer {
+  min-height: calc(100vh - 54.4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.mainContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("./img/imgWelcomePage/cuttingBoard.webp");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.8;
+}
+
+.welcomeContent {
+  z-index: 1;
+  text-align: center;
+  color: #fff;
+  padding-bottom: 4rem;
+}
+
+.welcomeContent h2 {
+  margin-bottom: 10px;
+  color: black;
+  font-family: "Courgette", cursive;
+  font-size: 2.5rem;
+}
+
+.welcomeContent button,
+.welcomeContent .button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 10px;
+}

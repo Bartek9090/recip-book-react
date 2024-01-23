@@ -1,0 +1,39 @@
+.SearchMainContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: antiquewhite;
+}
+.SearchMainContainer h1 {
+  font-family: "Courgette", cursive;
+  padding: 1rem;
+}
+.SearchMainContainer form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.SearchMainContainer input {
+  width: 100%;
+  max-width: 300px;
+  margin: 10px;
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+.SearchMainContainer button {
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  background-color: white;
+  cursor: pointer;
+}
+.SearchMainContainer button:hover {
+  background-color: #dfd3d3;
+}
+strong {
+  font-family: "Courgette", cursive;
+  color: red;
+}

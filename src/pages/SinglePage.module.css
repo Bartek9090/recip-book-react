@@ -1,0 +1,104 @@
+.singleRecipeMainContainer {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+}
+.singleRecipeImgContainer {
+  width: 50%;
+  margin-left: 10px;
+}
+.singleRecipeImgContainer img {
+  width: 100%;
+}
+.singleRecipeDescriptionContainer {
+  width: 50%;
+  margin-right: 10px;
+}
+.singleRecipeDescriptionContainer img {
+  width: 100%;
+}
+.singleRecipeDescriptionContainer p {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.singleRecipeDescriptionContainer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.singleRecipeDescriptionContainer li {
+  margin-bottom: 5px;
+}
+
+.singleRecipeDescriptionContainer .usedIngredients,
+.singleRecipeDescriptionContainer .missedIngredients {
+  margin-top: 10px;
+}
+
+.singleRecipeDescriptionContainer .usedIngredients p,
+.singleRecipeDescriptionContainer .missedIngredients p {
+  font-weight: bold;
+}
+
+.singleRecipeDescriptionContainer .usedIngredients ul,
+.singleRecipeDescriptionContainer .missedIngredients ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.singleRecipeDescriptionContainer .usedIngredients li,
+.singleRecipeDescriptionContainer .missedIngredients li {
+  margin-bottom: 5px;
+}
+.buttonCointainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.buttonCointainer button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 10px;
+  color: black;
+  margin: 10px;
+}
+.buttonCointainer button:hover {
+  background-color: #dfd3d3;
+}
+.buttonCointainer button a {
+  color: black;
+}
+@media (max-width: 450px) {
+  .singleRecipeMainContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    align-items: center;
+  }
+
+  .singleRecipeImgContainer,
+  .singleRecipeDescriptionContainer {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .singleRecipeImgContainer img,
+  .singleRecipeDescriptionContainer img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .buttonCointainer {
+    flex-direction: column;
+  }
+
+  .buttonCointainer button {
+    margin: 10px 0;
+  }
+}

@@ -1,0 +1,113 @@
+.header {
+  margin: auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: #add8e6;
+}
+
+.icon {
+  display: flex;
+  color: black;
+  gap: 0.8rem;
+}
+
+.icon i {
+  font-size: 1.2rem;
+}
+h3 {
+  font-size: 1.2rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.navList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+  font-size: 1.2rem;
+}
+
+.list {
+  display: flex;
+  gap: 1rem;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdownContent {
+  display: block;
+  position: absolute;
+  background-color: #d2d6dfee;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.6s ease;
+}
+
+.dropdownContent a {
+  color: black;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  display: block;
+  transition: color 0.7s ease;
+}
+
+.dropdownContent a:hover {
+  background-color: #bfc2c9ee;
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown:hover .dropdownContent {
+  display: block;
+  max-height: 200px;
+}
+
+.list a {
+  text-decoration: none;
+  color: black;
+  letter-spacing: 1px;
+  font-weight: 800;
+}
+
+.list a:hover,
+.list a.active {
+  color: black;
+  text-decoration: underline;
+}
+
+.list a:hover,
+.list a:active {
+  color: black;
+  text-decoration: underline;
+}
+
+@media (max-width: 400px) {
+  .icon {
+    display: flex;
+    color: black;
+    gap: 0.2rem;
+  }
+  .icon i {
+    font-size: 1rem;
+  }
+  h3 {
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+  .navList {
+    font-size: 1rem;
+    font-weight: 400;
+    gap: 0.5rem;
+  }
+}

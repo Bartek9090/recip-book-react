@@ -1,0 +1,49 @@
+.welcomeMain {
+  min-height: calc(100vh - 54.4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.welcomeMain::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("../img/imgWelcomePage/cuttingBoard.webp");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.8;
+}
+
+.welcomeContent {
+  z-index: 1;
+  text-align: center;
+  color: #fff;
+  padding-bottom: 4rem;
+}
+
+.welcomeContent h2 {
+  color: black;
+  font-family: "Courgette", cursive;
+  font-size: 3rem;
+}
+
+.welcomeContent button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 10px;
+  background-color: #fff;
+  cursor: pointer;
+}
+.welcomeContent button:hover {
+  background-color: #dfd3d3;
+}
+@media (max-width: 450px) {
+  .welcomeContent h2 {
+    font-size: 2rem;
+  }
+}

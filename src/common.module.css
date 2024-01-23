@@ -1,0 +1,80 @@
+.mainContainer {
+  min-height: calc(100vh - 54.4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: url("img/imgWelcomePage/cuttingBoard.webp");
+  background-size: cover;
+  background-position: center;
+}
+.errorImgBg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  background-image: url("../src/img/ImgErrorPage/errorBG.webp");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden; /* Dodaj tę linię, aby obraz tła nie wychodził poza kontener */
+}
+
+.errorContent {
+  z-index: 1;
+  text-align: center;
+  color: #000;
+  padding-bottom: 4rem;
+}
+
+.errorContent h2 {
+  margin-bottom: 10px;
+  font-family: "Courgette", cursive;
+  font-size: 2.5rem;
+  opacity: 1;
+  text-transform: uppercase;
+}
+
+.errorContent button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.centerContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.welcomeContent {
+  z-index: 1;
+  text-align: center;
+  color: #000;
+  padding-bottom: 4rem;
+}
+
+.welcomeContent h2 {
+  margin-bottom: 10px;
+  font-family: "Courgette", cursive;
+  font-size: 2.5rem;
+  opacity: 1;
+  text-transform: uppercase;
+}
+
+.welcomeContent button,
+.welcomeContent .button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 10px;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Dodaj tę linię, aby dodać efekt przezroczystości tylko do tła */
+}
