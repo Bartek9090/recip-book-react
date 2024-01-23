@@ -7,6 +7,7 @@ import MainNavigation from "../components/MainNavigation";
 export default function RecipePage() {
   const [search, setSearch] = useState("");
   const [recipes, setRecipes] = useState([]);
+  const [searchClicked, setSearchClicked] = useState(false);
 
   async function getRecipesByIngredients() {
     try {
@@ -28,10 +29,12 @@ export default function RecipePage() {
     e.preventDefault();
     if (search.trim() !== "") {
       await getRecipesByIngredients();
+      setSearchClicked(true); // Ustawienie, że przycisk "Search" został kliknięty
     } else {
       alert("Search field is empty. Please enter ingredients.");
     }
   };
+
   return (
     <>
       <MainNavigation />
@@ -40,7 +43,11 @@ export default function RecipePage() {
         handleChange={handleChange}
         handleSubmit={handleSubmit}
       />
-      <RecipeList recipes={recipes} />
+      <RecipeList
+        recipes={recipes}
+        searchTerm={search}
+        searchClicked={searchClicked}
+      />
     </>
   );
 }

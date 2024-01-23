@@ -1,15 +1,20 @@
 import { Link } from "react-router-dom";
 import classes from "./RecipList.module.css";
 
-const RecipeList = ({ recipes }) => {
+const RecipeList = ({ recipes, searchTerm, searchClicked }) => {
+  const showNoRecipesFound =
+    searchClicked && searchTerm && recipes && recipes.length === 0;
+
   return (
     <div className={classes.RecipListMainContainer}>
       <h1>Recipe Search List</h1>
-      {recipes && recipes.length > 0 ? (
+      {!showNoRecipesFound ? (
         <ul>
           {recipes.map((recipe) => (
             <li key={recipe.id} className={classes.recipeItem}>
-              <img src={recipe.image} alt={recipe.title} />
+              <Link to={`/singleRecipe/${recipe.id}`} state={{ recipe }}>
+                <img src={recipe.image} alt={recipe.title} />
+              </Link>
               <h3>{recipe.title}</h3>
               <p>Provided by Spoonacular </p>
               <p>{recipe.summary}</p>
