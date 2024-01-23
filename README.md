@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# Recipe App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+-------------------------
+## Description
+Recipe app built with React. This project utilizes functional components, React hooks, React router
+and integrates with an external recipe API using API. The purpose of building this project was 
+to practice React concepts, component structure, and API integration.
+This is a project entirely of my own invention.
 
-## Available Scripts
+Project has been deployed on netlify link below.
+https://main--splendorous-sopapillas-4b3a14.netlify.app/
+ 
+## About Project 
+This project allows you to search for recipes, view recipe details, and access full instructions. To use this app:
 
-In the project directory, you can run:
+- Enter ingredients in the search bar.
+- Click the "Search" button to find recipes.
+- Browse the list of recipes and click on a recipe to view details.
+- Click the "Full Instruction" button to see the complete recipe instructions.
 
-### `npm start`
+## Screenshots
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![RecipeApp1](https://github.com/Bartek9090/recip-book-react/assets/80546803/7fb88994-79a1-45e7-9a40-01694bccb1b8)
+![RecipeApp2](https://github.com/Bartek9090/recip-book-react/assets/80546803/53d0ee52-a6cb-4dfa-9d55-ab9fcd632ea3)
+![RecipeApp3](https://github.com/Bartek9090/recip-book-react/assets/80546803/450c9c1e-4afa-40fd-b3cc-fea7c6013a2c)
+![RecipeApp4](https://github.com/Bartek9090/recip-book-react/assets/80546803/bef152b7-0e39-486a-86f1-5e216fed80b2)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Technologies:
+* [react-icons](https://react-icons.github.io/react-icons/) version: 4.3.1
+* [React](https://reactjs.org/) version: 17.0.2
+* [Axios](https://axios-http.com/) version: 1.6.5
+* [React Router](https://reactrouter.com/) version: 6.21.1
+- JavaScript
+- CSS
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features:
+- **Recipe Search:** Enter ingredients and find matching recipes.
+- **Recipe Details:** View details of a selected recipe.
+- **Full Instruction:** Access complete instructions for a recipe.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### How to Run
+In order to get a copy of this project and run it locally, first of all, make sure you already have node and npm installed in your system.
+Clone this repository
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+$ git clone https://github.com/{Your username}/recipe-app-react.git
+```
+After cloning the repo, go to its root directory and install dependencies
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+`$ cd to file locaction` </br>
+`$ npm install` </br>
+Once the dependencies are installed, start the application,
 
-### `npm run eject`
+$ `npm start`</br>
+Then you will have access to application on localhost:3000
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Dependencies:
+* [React](https://reactjs.org/) version: 17.0.2
+* [react-icons](https://react-icons.github.io/react-icons/) version: 4.3.1
+* [Axios](https://axios-http.com/) version: 1.6.5
+* [React Router](https://reactrouter.com/) version: 6.21.1
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Help
+If you have any problem with website please do not hesitate text to me.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Author
+Bartek9090 
+**
