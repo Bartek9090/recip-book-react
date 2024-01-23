@@ -6,7 +6,9 @@ export default function SearchBar({ handleChange, handleSubmit, search }) {
         Find your <strong>meal</strong> with ours <strong>APP</strong>
       </h1>
       <form onSubmit={handleSubmit}>
-        <label htmlFor="search">Type recipes by comma</label>
+        <label htmlFor="search">
+          Type food name or ingredients separated by comma
+        </label>
         <input
           type="text"
           name="search"

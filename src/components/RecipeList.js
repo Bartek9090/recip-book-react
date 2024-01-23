@@ -4,7 +4,7 @@ import classes from "./RecipList.module.css";
 const RecipeList = ({ recipes }) => {
   return (
     <div className={classes.RecipListMainContainer}>
-      <h1>Recipe List</h1>
+      <h1>Recipe Search List</h1>
       {recipes && recipes.length > 0 ? (
         <ul>
           {recipes.map((recipe) => (
@@ -20,7 +20,7 @@ const RecipeList = ({ recipes }) => {
                     state={{ recipe }}
                     className={classes.detailButton}
                   >
-                    Detail
+                    Details
                   </Link>
                 </button>
               </div>
