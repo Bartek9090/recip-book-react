@@ -14,8 +14,9 @@ const SingleRecipe = () => {
     const fetchRecipe = async () => {
       try {
         const response = await axios.get(
-          `https://api.spoonacular.com/recipes/${id}/information?apiKey=${process.env.REACT_APP_API_RECIP_BOOK_KEY}`
+          `/.netlify/functions/getRecipeDetails?id=${id}`
         );
+
         setRecipe(response.data);
       } catch (error) {
         console.error("Error fetching recipe:", error);
