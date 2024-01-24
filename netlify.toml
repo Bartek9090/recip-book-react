@@ -1,10 +1,13 @@
 [build]
   functions = "functions"
-  
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
 
-[[functions]]
-  include = "functions/*"
+[functions]
+  external_node_modules = [
+    "module-one",
+    "module-two"
+  ]
