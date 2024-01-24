@@ -3,7 +3,7 @@
 -------------------------
 ## Description
 Recipe app built with React. This project utilizes functional components, React hooks, React router
-and integrates with an external recipe API using API. The purpose of building this project was 
+and integrates with an external recipe API using axios. The purpose of building this project was 
 to practice React concepts, component structure, and API integration.
 This is a project entirely of my own invention.
 
