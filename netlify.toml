@@ -3,5 +3,5 @@
   to = "/index.html"
   status = 200
 
-  [[functions]]
-  path = "functions/getRecipeDetails.js"
+[functions]
+  getRecipeDetails = "functions/getRecipeDetails.js"
