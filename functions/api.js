@@ -3,10 +3,10 @@ const serverless = require("serverless-http");
 const app = express();
 const router = express.Router();
 
-router.get("/hello", (req, res) => {
+router.get("/hello0", (req, res) => {
   res.send("Hello World!");
 });
 
-app.use("/.netlify/functions/api", router);
+app.use("functions/api", router);
 
 module.exports.handler = serverless(app);
