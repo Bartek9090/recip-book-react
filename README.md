@@ -7,7 +7,7 @@ and integrates with an external recipe API using axios. The purpose of building 
 to practice React concepts, component structure, and API integration.
 This is a project entirely of my own invention.
 
-Project has been deployed on netlify link below.
+Project has been deployed on netlify.
 https://main--splendorous-sopapillas-4b3a14.netlify.app/
  
 ## About Project 
@@ -53,7 +53,7 @@ After cloning the repo, go to its root directory and install dependencies
 `$ npm install` </br>
 Once the dependencies are installed, start the application,
 
-$ `npm start`</br>
+$ `npm run start:both`</br>
 Then you will have access to application on localhost:3000
 
 ## Dependencies:
