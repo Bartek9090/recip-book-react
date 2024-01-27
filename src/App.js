@@ -10,7 +10,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
-    errorElement: <ErrorPage />,
+    // errorElement: <ErrorPage />,
   },
   {
     path: "/recipePage",
@@ -19,10 +19,6 @@ const router = createBrowserRouter([
   {
     path: "/singleRecipe/:id",
     element: <SingleRecipe />,
-  },
-  {
-    path: "*",
-    element: <PassThrough />,
   },
 ]);
 
