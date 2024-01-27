@@ -1,7 +1,7 @@
 // import axios from "axios";
+// import ButtonURL from "../components/ButtonURL";
 import { useState, useEffect } from "react";
 import classes from "./SinglePage.module.css";
-// import ButtonURL from "../components/ButtonURL";
 import MainNavigation from "../components/MainNavigation";
 import { useParams, Link, useLocation } from "react-router-dom";
 
