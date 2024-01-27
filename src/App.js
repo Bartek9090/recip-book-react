@@ -2,7 +2,8 @@ import "./App.css";
 import Home from "./pages/Home";
 import ErrorPage from "./pages/ErrorPage";
 import RecipePage from "./pages/RecipePage";
-import SingleRecipe from "./pages/SingleRecipe";
+import PassThrough from "./pages/PassThrough";
+import SingleRecipe from "./pages/";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
   {
     path: "/singleRecipe/:id",
     element: <SingleRecipe />,
+  },
+  {
+    path: "*",
+    element: <PassThrough />,
   },
 ]);
 
