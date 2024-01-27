@@ -1,4 +1,4 @@
-import axios from "axios";
+// import axios from "axios";
 import { useState, useEffect } from "react";
 import classes from "./SinglePage.module.css";
 // import ButtonURL from "../components/ButtonURL";
@@ -8,7 +8,7 @@ import { useParams, Link, useLocation } from "react-router-dom";
 const SingleRecipe = () => {
   const { id } = useParams();
   const { state } = useLocation();
-  const [recipe, setRecipe] = useState(state ? state.recipe : null);
+  const [recipe] = useState(state ? state.recipe : null);
 
   useEffect(() => {
     console.log("Sending request for recipe details");
