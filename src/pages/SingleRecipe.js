@@ -1,37 +1,23 @@
-import { useState, useEffect } from "react";
-import { useParams, Link, useLocation } from "react-router-dom";
 import axios from "axios";
+import { useState, useEffect } from "react";
 import classes from "./SinglePage.module.css";
+// import ButtonURL from "../components/ButtonURL";
 import MainNavigation from "../components/MainNavigation";
-import ButtonURL from "../components/ButtonURL";
+import { useParams, Link, useLocation } from "react-router-dom";
+
 const SingleRecipe = () => {
   const { id } = useParams();
   const { state } = useLocation();
-
   const [recipe, setRecipe] = useState(state ? state.recipe : null);
 
   useEffect(() => {
-    const fetchRecipe = async () => {
-      try {
-        const response = await axios.get(
-          `/.netlify/functions/getRecipeDetails?id=${id}`
-        );
-
-        setRecipe(response.data);
-      } catch (error) {
-        console.error("Error fetching recipe:", error);
-      }
-    };
-
-    if (!recipe) {
-      fetchRecipe();
-    }
+    console.log("Sending request for recipe details");
   }, [id, recipe]);
 
   if (!recipe) {
     return (
       <div>
-        <p>Brak danych receptury</p>
+        <p>No data available</p>
         <Link to="/" className={classes.button}>
           Back
         </Link>
@@ -91,7 +77,7 @@ const SingleRecipe = () => {
                 Back to Recipe List
               </Link>
             </button>
-            <ButtonURL recipeId={recipe.id} />
+            {/* <ButtonURL recipeId={recipe.id} /> */}
           </div>
         </div>
       </div>

@@ -71,10 +71,5 @@
   padding: 10px 20px;
   font-size: 1rem;
   border-radius: 10px;
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.8
-  ); /* Dodaj tę linię, aby dodać efekt przezroczystości tylko do tła */
+  background-color: rgba(255, 255, 255, 0.8);
 }
