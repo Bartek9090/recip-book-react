@@ -2,7 +2,6 @@ import "./App.css";
 import Home from "./pages/Home";
 import ErrorPage from "./pages/ErrorPage";
 import RecipePage from "./pages/RecipePage";
-import PassThrough from "./pages/PassThrough";
 import SingleRecipe from "./pages/";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -10,7 +9,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
-    // errorElement: <ErrorPage />,
+    errorElement: <ErrorPage />,
   },
   {
     path: "/recipePage",

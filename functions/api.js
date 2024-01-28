@@ -7,6 +7,6 @@ router.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
-app.use("/.functions/api", router);
+app.use("/api", router);
 
 module.exports.handler = serverless(app);
