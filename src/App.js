@@ -2,7 +2,7 @@ import "./App.css";
 import Home from "./pages/Home";
 import ErrorPage from "./pages/ErrorPage";
 import RecipePage from "./pages/RecipePage";
-import SingleRecipe from "./pages/";
+import SingleRecipe from "./pages/SingleRecipe";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
