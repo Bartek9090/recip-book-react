@@ -22,8 +22,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start:backend": "nodemon src/backend/apiProxyService.js",
-    "start:frontend": "react-scripts start",
+    "start:backend": "PORT=3001 nodemon src/backend/apiProxyService.js",
+    "start:frontend": "PORT=3002 react-scripts start",
     "start:both": "npm-run-all --parallel start:backend start:frontend",
     "start": "npm run start:both",
     "heroku-postbuild": "cd client && npm install && npm run build && cd .. && npm install",
