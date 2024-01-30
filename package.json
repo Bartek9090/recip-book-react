@@ -21,9 +21,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "node src/concurrently  \"npm run start:backend\" \"npm run start:frontend\"",
-    "start:backend": "node src/backend/apiProxyService.js",
-    "start:frontend": "react-scripts start",
+    "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
+    "start:backend": "node backend/apiProxyService.js",
+    "start:frontend": "cd frontend && npm start",
     "heroku-postbuild": "npm install -g concurrently && npm install && cd client && npm install && npm run build",
     "client": "cd client && npm start",
     "dev": "concurrently \"npm run start\" \"npm run client\"",
