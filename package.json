@@ -21,9 +21,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "npm-run-all --parallel start:backend start:frontend",
-    "start:backend": "nodemon src/backend/apiProxyService.js",
-    "start:frontend": "react-scripts start",
+    "start:both": "npm run start:backend & npm run start:frontend",
+    "start:backend": "PORT=3001 nodemon src/backend/apiProxyService.js",
+    "start:frontend": "PORT=3002 react-scripts start",
     "heroku-postbuild": "cd client && npm install && npm run build",
     "client": "cd client && npm start",
     "dev": "concurrently \"npm run start\" \"npm run client\"",
