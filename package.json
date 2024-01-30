@@ -18,11 +18,10 @@
     "react-router-dom": "^6.21.1",
     "react-scripts": "5.0.1",
     "serverless-http": "^3.2.0",
-    "web-vitals": "^2.1.4",
-    "concurrently": "^8.2.2"
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
+    "start": "node_modules/.bin/concurrently \"npm run start:backend\" \"npm run start:frontend\"",
     "start:backend": "node src/backend/apiProxyService.js",
     "start:frontend": "react-scripts start",
     "heroku-postbuild": "npm install && cd client && npm install && npm run build",
@@ -51,7 +50,7 @@
     ]
   },
   "devDependencies": {
-    "react-app-rewired": "^2.2.1",
-    "concurrently": "^8.2.2"
+    "concurrently": "^8.2.2",
+    "react-app-rewired": "^2.2.1"
   }
 }
