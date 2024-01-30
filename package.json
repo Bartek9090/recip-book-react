@@ -24,7 +24,9 @@
     "start:backend": "nodemon src/backend/apiProxyService.js",
     "start:frontend": "react-scripts start",
     "start:both": "concurrently \"npm run start:backend\"  \"npm run start:frontend\"",
-    "start": "npm run start:both",
+    "start": "node server.js",
+    "client": "cd client && npm start",
+    "dev": "concurrently \"npm run start\" \"npm run client\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
