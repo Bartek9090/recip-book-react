@@ -24,7 +24,7 @@
   "scripts": {
     "start:backend": "nodemon src/backend/apiProxyService.js",
     "start:frontend": "react-scripts start",
-    "start:both": "concurrently \"npm run start:backend\"  \"npm run start:frontend\"",
+    "start:both": "npm-run-all --parallel start:backend start:frontend",
     "start": "npm run start:both",
     "heroku-postbuild": "cd client && npm install && npm run build && cd .. && npm install",
     "client": "cd client && npm start",
