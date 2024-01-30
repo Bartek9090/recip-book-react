@@ -11,13 +11,13 @@ export default function RecipePage() {
 
   async function getRecipesByIngredients() {
     try {
-      const resp = await axios.get(
-        "http://localhost:4000/recipesByIngredients",
-
-        {
-          params: { search },
-        }
-      );
+      const baseURL =
+        process.env.NODE_ENV === "production"
+          ? "https://recipes-book-react-0a42bf53f4de.herokuapp.com"
+          : "http://localhost:4000";
+      const resp = await axios.get(`${baseURL}/recipesByIngredients`, {
+        params: { search },
+      });
       setRecipes(resp.data);
     } catch (error) {
       console.error("Error fetching recipes:", error);

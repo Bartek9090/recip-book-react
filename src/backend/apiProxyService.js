@@ -5,7 +5,12 @@ require("dotenv").config();
 
 const api = express();
 
-api.use(cors());
+const corsOptions = {
+  origin: "https://recipes-book-react-0a42bf53f4de.herokuapp.com/",
+  optionsSuccessStatus: 204,
+};
+
+api.use(cors(corsOptions));
 api.use(express.json());
 api.get("/recipesByIngredients", async (req, res) => {
   const { search } = req.query;
