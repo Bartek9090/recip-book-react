@@ -7,8 +7,7 @@ and integrates with an external recipe API using axios. The purpose of building 
 to practice React concepts, component structure, and API integration.
 This is a project entirely of my own invention.
 
-Project has been deployed on netlify.
-https://splendorous-sopapillas-4b3a14.netlify.app 
+
 ## About Project 
 This project allows you to search for recipes, view recipe details, and access full instructions. To use this app:
 
