@@ -21,7 +21,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start:backend": "nodemon src/backend/apiProxyService.js",
+    "start:backend": "throng src/backend/apiProxyService.js -w $WEB_CONCURRENCY",
     "start:frontend": "react-scripts start",
     "start": "concurrently \"npm run start:backend\"  \"npm run start:frontend\"",
     "build": "react-scripts build",
@@ -50,6 +50,7 @@
   "devDependencies": {
     "concurrently": "^8.2.2",
     "react-app-rewired": "^2.2.1",
+    "throng": "^5.0.0",
     "yargs": "^17.7.2"
   }
 }
