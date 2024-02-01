@@ -11,7 +11,7 @@ export default function MainNavigation() {
       <Link to={"/"}>
         <div className={classes.icon}>
           <i className="fa-solid fa-utensils"></i>
-          <h3>Food Recipe vercel</h3>
+          <h3>Food Recipe </h3>
         </div>
       </Link>
       <nav>

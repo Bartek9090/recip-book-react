@@ -21,7 +21,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start:backend": "nodemon src/backend/apiProxyService.js",
+    "start:backend": "nodemon src/api/apiProxyService.js",
     "start:frontend": "react-scripts start",
     "start:both": "concurrently \"npm run start:backend\"  \"npm run start:frontend\"",
     "build": "react-scripts build",

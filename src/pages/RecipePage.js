@@ -14,7 +14,6 @@ export default function RecipePage() {
       const resp = await axios.get(
         "http://localhost:4000/recipesByIngredients",
 
-        // https://splendorous-sopapillas-4b3a14.netlify.app/recipesByIngredients
         {
           params: { search },
         }
