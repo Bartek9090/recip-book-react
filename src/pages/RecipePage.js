@@ -11,6 +11,7 @@ export default function RecipePage() {
 
   async function getRecipesByIngredients() {
     try {
+      console.log("jestem");
       const resp = await axios.get(
         "http://localhost:4000/recipesByIngredients",
 

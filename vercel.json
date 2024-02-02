@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "routes": [
+    {
+      "src": "/recipesByIngredients",
+      "methods": ["GET"],
+      "headers": { "Access-Control-Allow-Origin": "*" }
+    }
+  ]
+}
