@@ -6,7 +6,9 @@ Recipe app built with React. This project utilizes functional components, React 
 and integrates with an external recipe API using axios. The purpose of building this project was 
 to practice React concepts, component structure, and API integration.
 This is a project entirely of my own invention.
+Additionally, I implemented a custom backend to handle API calls securely, but encountered challenges during implementation. Despite my efforts, I encountered difficulties in successfully implementing the backend. Therefore, I deployed the app without the backend.
 
+https://recip-book-react-ml9f-12201rgsr-bartek-s-projects.vercel.app/
 
 ## About Project 
 This project allows you to search for recipes, view recipe details, and access full instructions. To use this app:
