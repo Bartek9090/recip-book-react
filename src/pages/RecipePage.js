@@ -12,13 +12,9 @@ export default function RecipePage() {
   async function getRecipesByIngredients() {
     try {
       const resp = await axios.get(
-        "http://localhost:4000/recipesByIngredients",
-
-        // https://splendorous-sopapillas-4b3a14.netlify.app/recipesByIngredients
-        {
-          params: { search },
-        }
+        `https://api.spoonacular.com/recipes/findByIngredients?apiKey=${process.env.REACT_APP_API_RECIP_BOOK_KEY}&ingredients=${search}`
       );
+
       setRecipes(resp.data);
     } catch (error) {
       console.error("Error fetching recipes:", error);
@@ -32,7 +28,7 @@ export default function RecipePage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (search.trim() !== "") {
-      await getRecipesByIngredients(search);
+      await getRecipesByIngredients();
       setSearchClicked(true);
     } else {
       alert("Search field is empty. Please enter ingredients.");
